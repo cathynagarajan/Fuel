@@ -4,8 +4,8 @@ This file maintains the authoritative inventory of all **top-level parent folder
 
 - **Repository Root**: `/home/krithika/workspace/Fuel`
 - **Top-Level Parent Folders Processed**: `2` (plus repository root `.` files)
-- **Total Indexed Files**: `10`
-- **Total Knowledge Graph Nodes**: `274`
+- **Total Indexed Files**: `11`
+- **Total Knowledge Graph Nodes**: `220`
 
 ---
 
@@ -13,14 +13,14 @@ This file maintains the authoritative inventory of all **top-level parent folder
 
 | # | Top-Level Parent Folder | Absolute Path | Indexed Files | Extracted KG Nodes | Key Subfolders | Description & Scope |
 | :---: | :--- | :--- | :---: | :---: | :--- | :--- |
-| 1 | [`chats/`](chats) | `/home/krithika/workspace/Fuel/chats/` | `1` | `180` | — | Exported or synced Zed/Antigravity AI assistant chat transcripts and conversation logs indexed into the Knowledge Graph |
+| 1 | [`chats/`](chats) | `/home/krithika/workspace/Fuel/chats/` | `1` | `124` | — | Exported or synced Zed/Antigravity AI assistant chat transcripts and conversation logs indexed into the Knowledge Graph |
 | 2 | [`server/`](server) | `/home/krithika/workspace/Fuel/server/` | `2` | `2` | `utils/` | K3s control plane setup (`k3s-images.sh`, `k3s-server.sh`), Lima VM config, Kaniko builders, PostgreSQL/pgvector, pgAdmin, Registry, and Unifi manifests |
 
 ### Repository Root (`.` Top-Level Files)
 
 | Location | Absolute Path | Indexed Root Files | Extracted KG Nodes | Description |
 | :--- | :--- | :---: | :---: | :--- |
-| `.` (Root Files) | `/home/krithika/workspace/Fuel/` | `7` | `92` | Repository root configuration, rules, and entrypoints (`network_config.json`, `rules.md`, `resources.md`, `repo.md`, `global.md`, `CLAUDE.md`, `README.md`, `query_kg.py`) |
+| `.` (Root Files) | `/home/krithika/workspace/Fuel/` | `8` | `94` | Repository root configuration, rules, and entrypoints (`network_config.json`, `rules.md`, `resources.md`, `repo.md`, `global.md`, `CLAUDE.md`, `README.md`, `query_kg.py`) |
 
 ---
 
@@ -28,9 +28,9 @@ This file maintains the authoritative inventory of all **top-level parent folder
 
 | Top-Level Parent Folder | Extracted Entity Types (`type: count`) |
 | :--- | :--- |
-| `chats/` | `chat_session`: 7, `chat_turn`: 52, `topic_entity`: 121 |
+| `chats/` | `chat_session`: 4, `chat_turn`: 29, `topic_entity`: 91 |
 | `server/` | `shell_script`: 2 |
-| `.` (Root Files) | `config_file`: 2, `document`: 1, `document_file`: 2, `document_section`: 15, `document_table`: 1, `html_template`: 2, `topic_entity`: 69 |
+| `.` (Root Files) | `config_file`: 2, `document`: 1, `document_file`: 2, `document_section`: 15, `document_table`: 1, `html_template`: 2, `python_function`: 1, `python_module`: 1, `topic_entity`: 69 |
 
 ---
 
