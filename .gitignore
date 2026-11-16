@@ -1,0 +1,10 @@
+appsetting.json
+appsettings.json
+.env
+knowledge_graph/last_llm_prompt.txt
+knowledge_graph/last_query_results.json
+knowledge_graph/query_results.html
+knowledge_graph/publish_precheck_report.md
+knowledge_graph/publish_precheck_report.html
+knowledge_graph/vulnerability_report.md
+knowledge_graph/.kg_parse_cache.db

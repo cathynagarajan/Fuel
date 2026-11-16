@@ -1,0 +1,23 @@
+[
+  {
+    "label": "zedCheck",
+    "command": "./server/utils/watch-agent-activity.sh",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "watch-agent (Unified Agent & Subagent Monitor)",
+    "command": "./server/utils/watch-agent-activity.sh",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "watch-subagents (Delegated Subagents Only)",
+    "command": "./server/utils/watch-agent-activity.sh --subagents-only",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  }
+]

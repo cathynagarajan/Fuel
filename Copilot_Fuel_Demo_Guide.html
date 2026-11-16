@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microsoft Copilot — Weekly Fuel Surcharge Demo Kit (For Jason 1-on-1)</title>
+  <style>
+    body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; color: #1e293b; background: #f8fafc; max-width: 920px; margin: 24px auto; padding: 0 20px; line-height: 1.55; }
+    .card { background: #ffffff; border-radius: 10px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08); padding: 22px 26px; margin-bottom: 20px; border-left: 5px solid #0f3d75; }
+    h1 { color: #0f3d75; font-size: 24px; margin-bottom: 6px; }
+    .subtitle { color: #475569; font-size: 14px; margin-bottom: 20px; }
+    h2 { color: #0f3d75; font-size: 18px; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    .prompt-box { background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px 18px; font-family: Consolas, 'Courier New', monospace; font-size: 13.5px; white-space: pre-wrap; color: #0f172a; margin: 10px 0; }
+    .tip { background: #ecfdf5; border-left: 4px solid #059669; padding: 10px 14px; border-radius: 6px; font-size: 14px; margin-top: 12px; }
+    .warn { background: #fffbeb; border-left: 4px solid #d97706; padding: 10px 14px; border-radius: 6px; font-size: 14px; margin-top: 12px; }
+    ul, ol { margin: 8px 0; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+
+  <h1>Microsoft Copilot — Weekly Fuel Surcharge Demo Kit</h1>
+  <div class="subtitle">Prepared for Cathy's Monthly 1-on-1 with Jason (Next Tuesday) | 100% Aligned with Ardent Mills' Microsoft Copilot</div>
+
+  <div class="card">
+    <h2>1. Master Prompt #1: "Monday Fuel" (Paste into M365 Copilot with Web Toggle ON)</h2>
+    <p>Make sure the <strong>Web</strong> toggle is selected at the top of Microsoft Copilot, then paste this exact prompt:</p>
+    <div class="prompt-box">Act as an Ardent Mills Transportation Analyst. Pull this week's Monday Fuel Surcharge rates from the following 3 sources and format them into a clean Consolidated Summary Table with columns: [Carrier / Source | Category | Effective Date | Avg. OHD Price | Rate / Price]:
+
+1. Oceanex (https://www.oceanex.com/forms-references/fuel-surcharge/):
+   - Extract ONLY the Effective Week and the "Full Load TL2 (10,000 – 54,999 lbs)" fuel surcharge rate.
+2. CN Rail (https://www.cn.ca/en/customer-centre/prices-tariffs-transit-times/fuel-surcharge):
+   - For Tariff CN 7404 (Weekly Intermodal): Extract Effective Date, Avg. Weekly OHD Price, and the "Intra-Canada" rate ONLY.
+   - For Tariff CN 7405 (Monthly Intermodal): Extract Current &amp; Upcoming Effective Month, Avg. OHD Price, and the "Intra-Canada" rate ONLY.
+3. Bison Transport (https://img.bisontransport.com/public/resources/pdf/documents/bison_transport/1033-canada_crossborder_domestic_fuel_surcharge.pdf):
+   - Extract the Effective Date range and the "Intermodal (Within Canada)" fuel surcharge rate ONLY.
+
+Do not include US, Cross-Border, LTL, or Carload rates—only the exact Canada/TL2 fields listed above.</div>
+    <div class="warn">
+      <strong>Pro Tip if Cloudflare blocks Oceanex or Bison PDF in standalone Copilot:</strong> Open the Oceanex, CN, and Bison tabs in <strong>Microsoft Edge</strong>, click the <strong>Copilot icon</strong> in the top-right corner of Edge, and paste the prompt there—Edge Copilot reads open browser tabs and PDFs directly without getting blocked by website firewalls!
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Master Prompt #2: "Tuesday Fuel — Kalibrate" (Attach Excel File in Copilot)</h2>
+    <p>Download or attach the weekly Kalibrate Excel file (<code>Diesel_Retail (Incl. Tax)_WEEKLY_2026.xlsx</code> from <a href="https://charting.kalibrate.com/WPPS/Diesel/Retail%20(Incl.%20Tax)/WEEKLY/2026/Diesel_Retail%20(Incl.%20Tax)_WEEKLY_2026.xlsx">Kalibrate Direct Excel Link</a>) using the <strong>+ (Add file)</strong> button in Copilot, and paste:</p>
+    <div class="prompt-box">Read the attached Kalibrate Weekly Retail Diesel Excel file. Look at the bottom section of the sheet for the row labeled "Canada Ave(V)" (around Row 81). Extract the value from the furthest-right column (the latest Tuesday week date) and add it as the final row to my Weekly Fuel Surcharge Summary Table:
+- Carrier / Source: Kalibrate (Tuesday Release)
+- Category: Canada Ave(V) – Diesel Retail (Incl. Tax)
+- Effective Date: [Latest Tuesday Column Header]
+- Rate / Price: [Value in c/L]</div>
+  </div>
+
+  <div class="card">
+    <h2>3. How to Make It Look Like a "1-Click Command" for Jason on Tuesday</h2>
+    <p>In Antigravity, you just typed <code>monday fuel</code> because Antigravity has your custom memory rule saved. You can do the exact same thing in <strong>Microsoft Copilot</strong> in 60 seconds before Tuesday's meeting using either of these built-in features:</p>
+    <ol>
+      <li><strong>Option A — Save to Copilot Prompt Gallery (Fastest — 30 Seconds):</strong>
+        <ul>
+          <li>Paste Master Prompt #1 into Copilot once, hover over your sent message, click the <strong>Bookmark / Save Prompt</strong> icon, and name it <strong>"Monday Fuel Surcharge"</strong>.</li>
+          <li>In your Tuesday 1-on-1 with Jason, click <strong>View Prompts &rarr; Saved Prompts &rarr; "Monday Fuel Surcharge"</strong> and hit Enter!</li>
+        </ul>
+      </li>
+      <li><strong>Option B — Create a Personal "Ardent Fuel Assistant" Agent in Copilot (Super Impressive!):</strong>
+        <ul>
+          <li>In Microsoft 365 Copilot (left sidebar), click <strong>Create Agent</strong> (or <strong>Agent Builder</strong>).</li>
+          <li><strong>Name:</strong> <code>Ardent Weekly Fuel Surcharge Agent</code></li>
+          <li><strong>Instructions:</strong> Paste Master Prompt #1 and #2 into the Agent's Instructions box, and add <strong>Starter Prompts</strong> labeled <code>Monday Fuel</code> and <code>Tuesday Fuel (Kalibrate)</code>.</li>
+          <li>When you share your screen with Jason on Tuesday, you literally just click the <strong>"Monday Fuel"</strong> button inside your Ardent Copilot Agent!</li>
+        </ul>
+      </li>
+    </ol>
+    <div class="tip">
+      <strong>Talking Point for Jason on Tuesday:</strong> <em>"I took the exact rules and logic we tested for our Weekly Fuel Surcharge extraction and built them into a reusable Microsoft Copilot prompt/agent so anyone on our Ardent team can run it in Copilot."</em>
+    </div>
+  </div>
+
+</body>
+</html>
