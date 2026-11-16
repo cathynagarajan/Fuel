@@ -1,11 +1,22 @@
 # Project Rules & AI Agent Operational Guidelines (`Fuel`)
 
-## 0. Mandatory Shared Fuel Protocol for Qwen & Antigravity
-1. **Always Address the User as `Cathy`**.
-2. **Read `QWEN.md`, `chats/SHARED_SESSION_STATE.md`, & `FUEL_AUTOMATION_GUIDE.md` First**:
-   - Whenever `use qwen` or `stop qwen` is triggered, read `/home/krithika/workspace/Fuel/QWEN.md` and `/home/krithika/workspace/Fuel/chats/SHARED_SESSION_STATE.md` immediately so you pull the exact 4 Canadian/TL2 fuel surcharge fields (`Oceanex Full Load TL2`, `CN 7404 & 7405 Intra-Canada`, `Bison Intermodal Within Canada`, and `Kalibrate Row 81 Canada Ave(V)`).
-3. **Plain English Only — ZERO LaTeX (`$...$`) in Zed Chat**:
-   - Never use LaTeX math (`\rightarrow`, `\le`) in chat responses; use plain keyboard arrows (`->`) and backtick `$` amounts so Zed never interprets two `$` signs as math.
+## 0. Cathy's Permanent Fuel Surcharge Rules (Applies to Antigravity & Qwen!)
+
+1. **Whenever Cathy says `"monday fuel"` or `"fuel"`**:
+   - Read `FUEL_AUTOMATION_GUIDE.md` and `Fuel_Surcharge_Report.html`.
+   - Pull the latest weekly rates from:
+     a) **Oceanex** (`https://ws.oceanex.com/ws/website/fuel-surcharge/list` POST JSON `{"nbOfWeeks":4}` -> Effective Week & Full Load TL2 10,000-54,999 lbs rate).
+     b) **CN 7404 & CN 7405** (`https://www.cn.ca/en/customer-centre/prices-tariffs-transit-times/fuel-surcharge` -> Effective Date/Month, Avg. OHD Price, and Intra-Canada rate only).
+     c) **Bison Transport** (`https://img.bisontransport.com/public/resources/pdf/documents/bison_transport/1033-canada_crossborder_domestic_fuel_surcharge.pdf` -> Intermodal Within Canada rate only).
+   - Update `Fuel_Surcharge_Report.html` and display the clean consolidated table in chat.
+
+2. **Whenever Cathy says `"tuesday fuel"` or `"Kalibrate"`**:
+   - Run/fetch Kalibrate Weekly Retail Diesel (`https://charting.kalibrate.com/WPPS/Diesel/Retail%20(Incl.%20Tax)/WEEKLY/2026/Diesel_Retail%20(Incl.%20Tax)_WEEKLY_2026.xlsx`, or `python3 /home/krithika/workspace/Fuel/get_kalibrate_canada_ave.py`), extract the latest Tuesday column for **Row 81 `Canada Ave(V)`**, and update `Fuel_Surcharge_Report.html`.
+
+3. **Shared Qwen <-> Antigravity & Formatting Protocol**:
+   - Always address the user as **`Cathy`**.
+   - Read `QWEN.md` and `chats/SHARED_SESSION_STATE.md` first on mode switches (`use qwen` / `stop qwen`).
+   - Use 100% plain English in Zed chat — **ZERO LaTeX (`$...$`)** (`->` instead of `\rightarrow`, and wrap `$` prices in backticks).
 
 ---
 
@@ -20,10 +31,9 @@
 
 ## 2. Mandatory Pre-Task & Post-Task Knowledge Graph (`query_kg.py`) Workflow
 1. **Query Knowledge Graph First (`repo="fuel"` REQUIRED!)**:
-   - Always pass `repo="fuel"` when calling `kg_rag_query`:
-     ```bash
-     python3 /home/krithika/workspace/Fuel/knowledge_graph/query_kg.py --search "<symbol_or_topic>"
-     ```
+   ```bash
+   python3 /home/krithika/workspace/Fuel/knowledge_graph/query_kg.py --search "<symbol_or_topic>"
+   ```
 2. **Single-Repo Commit & Push (Antigravity <-> Qwen Dual Sync)**:
    - On every commit, update `/home/krithika/workspace/Fuel/chats/SHARED_SESSION_STATE.md` and `Fuel_Surcharge_Report.html` first, then run:
      ```bash

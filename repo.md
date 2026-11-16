@@ -5,7 +5,7 @@ This file maintains the authoritative inventory of all **top-level parent folder
 - **Repository Root**: `/home/krithika/workspace/Fuel`
 - **Top-Level Parent Folders Processed**: `2` (plus repository root `.` files)
 - **Total Indexed Files**: `13`
-- **Total Knowledge Graph Nodes**: `282`
+- **Total Knowledge Graph Nodes**: `280`
 
 ---
 
@@ -13,7 +13,7 @@ This file maintains the authoritative inventory of all **top-level parent folder
 
 | # | Top-Level Parent Folder | Absolute Path | Indexed Files | Extracted KG Nodes | Key Subfolders | Description & Scope |
 | :---: | :--- | :--- | :---: | :---: | :--- | :--- |
-| 1 | [`chats/`](chats) | `/home/krithika/workspace/Fuel/chats/` | `2` | `186` | — | Exported or synced Zed/Antigravity AI assistant chat transcripts and conversation logs indexed into the Knowledge Graph |
+| 1 | [`chats/`](chats) | `/home/krithika/workspace/Fuel/chats/` | `2` | `184` | — | Exported or synced Zed/Antigravity AI assistant chat transcripts and conversation logs indexed into the Knowledge Graph |
 | 2 | [`server/`](server) | `/home/krithika/workspace/Fuel/server/` | `2` | `2` | `utils/` | K3s control plane setup (`k3s-images.sh`, `k3s-server.sh`), Lima VM config, Kaniko builders, PostgreSQL/pgvector, pgAdmin, Registry, and Unifi manifests |
 
 ### Repository Root (`.` Top-Level Files)
@@ -28,7 +28,7 @@ This file maintains the authoritative inventory of all **top-level parent folder
 
 | Top-Level Parent Folder | Extracted Entity Types (`type: count`) |
 | :--- | :--- |
-| `chats/` | `chat_session`: 6, `chat_turn`: 52, `topic_entity`: 128 |
+| `chats/` | `chat_session`: 6, `chat_turn`: 52, `topic_entity`: 126 |
 | `server/` | `shell_script`: 2 |
 | `.` (Root Files) | `config_file`: 2, `document`: 2, `document_file`: 2, `document_section`: 15, `document_table`: 1, `html_template`: 2, `python_function`: 1, `python_module`: 1, `topic_entity`: 68 |
 

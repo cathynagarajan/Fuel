@@ -1,10 +1,10 @@
 # Kubernetes Repository Knowledge Graph
 
 - **Repository Root**: `/home/krithika/workspace/Fuel`
-- **Last Updated**: `2026-11-16T03:09:16.197274+00:00`
+- **Last Updated**: `2026-11-16T03:16:49.937198+00:00`
 - **Indexed Files**: `13`
-- **Total Graph Nodes**: `282`
-- **Total Graph Edges**: `437`
+- **Total Graph Nodes**: `280`
+- **Total Graph Edges**: `450`
 
 ## Entity Counts by Type
 
@@ -21,7 +21,7 @@
 | `python_function` | 1 |
 | `python_module` | 1 |
 | `shell_script` | 2 |
-| `topic_entity` | 196 |
+| `topic_entity` | 194 |
 
 ## Cluster Nodes
 
