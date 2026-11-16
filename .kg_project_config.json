@@ -1,9 +1,19 @@
 {
-  "single_repo_mode": true,
-  "kg_version": "4.4.1",
-  "git_remote_url": "",
+  "project_name": "Fuel",
+  "project_slug": "fuel",
+  "project_path": "/home/krithika/workspace/Fuel",
+  "target_host": "192.168.1.163",
+  "ssh_user": "krithika",
+  "developer_name": "Krithika",
+  "git_remote_url": "https://github.com/cathynagarajan/Fuel.git",
   "git_branch": "main",
-  "mcp_endpoint": "http://192.168.1.181:8000/mcp",
-  "vectordb_endpoint": "192.168.1.155:30432",
-  "installed_at": "2026-11-16T02:02:24.769003"
+  "git_author_name": "Krithika",
+  "git_author_email": "cathynagarajan@gmail.com",
+  "single_repo_mode": true,
+  "cluster_5node_sync": false,
+  "pgvector_host": "192.168.1.155",
+  "pgvector_port": 30432,
+  "pgvector_table": "kg_vectors_fuel",
+  "mcp_gateway": "http://192.168.1.181:8000/mcp",
+  "updated_at": "2026-11-16T02:02:59.158575+00:00"
 }

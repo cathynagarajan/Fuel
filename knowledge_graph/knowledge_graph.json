@@ -2,7 +2,7 @@
   "metadata": {
     "kg_version": "4.4.1",
     "repository": "/home/krithika/workspace/Fuel",
-    "generated_at": "2026-11-16T02:02:34.101017+00:00",
+    "generated_at": "2026-11-16T02:03:08.283115+00:00",
     "total_files_indexed": 10,
     "total_nodes": 274,
     "total_edges": 391,
@@ -6628,7 +6628,7 @@
     "Fuel_Surcharge_Report.html": "dd897b558b49eaae65006af8bcb552695abce5f2af454aa3c6c59cb6a5ab8505",
     "Get-KalibrateCanadaAveV.ps1": "d0374998376ae59f07dbaf4a65853cf9503c9da21cc66cec3503252577dd0eaf",
     "Kalibrate_Diesel_Weekly_2026.xlsx": "9b72011baf6331830b1dac99e967a0837f8b9f6a1db2958d053f779c230bee1a",
-    "transcript.jsonl": "67569ef91abac5a97920af4672cd5878cabeff2c1e78c0da27deb8acec0bcfe1",
+    "transcript.jsonl": "9c1dfad9cfd11096503394deb2d2582bafbe3a1594d82e049778fed9c2c39f99",
     "chats/transcript.jsonl": "67569ef91abac5a97920af4672cd5878cabeff2c1e78c0da27deb8acec0bcfe1",
     "server/utils/install-watch-agent-cli.sh": "aba3d385a40bf2db30e939a0947025f8075cb01589cc923c1e32a38f5dbd35c3",
     "server/utils/watch-subagents.sh": "92190317c55b2730fe941acb7f25f4f0434a1732c39f75ebd015d000245dc544",

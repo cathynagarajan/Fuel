@@ -1,7 +1,7 @@
 # Kubernetes Repository Knowledge Graph
 
 - **Repository Root**: `/home/krithika/workspace/Fuel`
-- **Last Updated**: `2026-11-16T02:02:34.101017+00:00`
+- **Last Updated**: `2026-11-16T02:03:08.283115+00:00`
 - **Indexed Files**: `10`
 - **Total Graph Nodes**: `274`
 - **Total Graph Edges**: `391`
