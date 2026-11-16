@@ -1,15 +1,15 @@
 {
-  "pii_scans_total": 5776,
-  "pii_redactions_total": 725,
+  "pii_scans_total": 6957,
+  "pii_redactions_total": 873,
   "pii_by_category": {
     "pem_key": 0,
     "api_key": 0,
     "jwt": 0,
     "secret_assign": 0,
     "ssn": 0,
-    "credit_card": 15,
-    "email": 530,
-    "phone": 180
+    "credit_card": 18,
+    "email": 639,
+    "phone": 216
   },
   "mcp_tool_calls": {
     "kg_rag_query": 0,
@@ -27,7 +27,7 @@
   },
   "recent_guardrail_events": [
     {
-      "timestamp": "2026-11-16T02:11:26.607034+00:00",
+      "timestamp": "2026-11-16T03:09:16.174361+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -36,7 +36,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.605511+00:00",
+      "timestamp": "2026-11-16T03:09:16.173254+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -45,7 +45,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.604279+00:00",
+      "timestamp": "2026-11-16T03:09:16.172085+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -54,7 +54,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.602890+00:00",
+      "timestamp": "2026-11-16T03:09:16.170683+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.601383+00:00",
+      "timestamp": "2026-11-16T03:09:16.169170+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -72,7 +72,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.598838+00:00",
+      "timestamp": "2026-11-16T03:09:16.166650+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -81,7 +81,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.597601+00:00",
+      "timestamp": "2026-11-16T03:09:16.165471+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -90,7 +90,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.596434+00:00",
+      "timestamp": "2026-11-16T03:09:16.164349+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -99,7 +99,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.595218+00:00",
+      "timestamp": "2026-11-16T03:09:16.163250+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -108,7 +108,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.594025+00:00",
+      "timestamp": "2026-11-16T03:09:16.162102+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -117,7 +117,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.592723+00:00",
+      "timestamp": "2026-11-16T03:09:16.160798+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -126,7 +126,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.591566+00:00",
+      "timestamp": "2026-11-16T03:09:16.159687+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -135,7 +135,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.590357+00:00",
+      "timestamp": "2026-11-16T03:09:16.158562+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -144,7 +144,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.586364+00:00",
+      "timestamp": "2026-11-16T03:09:16.154656+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -153,7 +153,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.583773+00:00",
+      "timestamp": "2026-11-16T03:09:16.152231+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -162,7 +162,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.582526+00:00",
+      "timestamp": "2026-11-16T03:09:16.151014+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -171,7 +171,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.581182+00:00",
+      "timestamp": "2026-11-16T03:09:16.149718+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
@@ -179,7 +179,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.578704+00:00",
+      "timestamp": "2026-11-16T03:09:16.147446+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -188,7 +188,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.574095+00:00",
+      "timestamp": "2026-11-16T03:09:16.142889+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -197,7 +197,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.572899+00:00",
+      "timestamp": "2026-11-16T03:09:16.141696+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -206,7 +206,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.567387+00:00",
+      "timestamp": "2026-11-16T03:09:16.136081+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -215,7 +215,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.564815+00:00",
+      "timestamp": "2026-11-16T03:09:16.133575+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 2,
       "categories": {
@@ -224,7 +224,31 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.546090+00:00",
+      "timestamp": "2026-11-16T03:09:16.115104+00:00",
+      "source": "mcp_guardrail",
+      "total_redacted": 1,
+      "categories": {
+        "email": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-16T03:09:16.112759+00:00",
+      "source": "mcp_guardrail",
+      "total_redacted": 1,
+      "categories": {
+        "email": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-16T03:09:16.111676+00:00",
+      "source": "mcp_guardrail",
+      "total_redacted": 1,
+      "categories": {
+        "email": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-16T03:09:16.108318+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 4,
       "categories": {
@@ -233,7 +257,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.544971+00:00",
+      "timestamp": "2026-11-16T03:09:16.107239+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 5,
       "categories": {
@@ -242,7 +266,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.543969+00:00",
+      "timestamp": "2026-11-16T03:09:16.106366+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 3,
       "categories": {
@@ -250,7 +274,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.543260+00:00",
+      "timestamp": "2026-11-16T03:09:16.105859+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
@@ -258,7 +282,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.542601+00:00",
+      "timestamp": "2026-11-16T03:09:16.105237+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
@@ -266,7 +290,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.541900+00:00",
+      "timestamp": "2026-11-16T03:09:16.104556+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
@@ -274,7 +298,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.541142+00:00",
+      "timestamp": "2026-11-16T03:09:16.103924+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 10,
       "categories": {
@@ -282,7 +306,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.540276+00:00",
+      "timestamp": "2026-11-16T03:09:16.103121+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
@@ -290,7 +314,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.538295+00:00",
+      "timestamp": "2026-11-16T03:09:16.101190+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 7,
       "categories": {
@@ -298,7 +322,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.535834+00:00",
+      "timestamp": "2026-11-16T03:09:16.098771+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 3,
       "categories": {
@@ -306,7 +330,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.524468+00:00",
+      "timestamp": "2026-11-16T03:09:16.087646+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 3,
       "categories": {
@@ -315,7 +339,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.523744+00:00",
+      "timestamp": "2026-11-16T03:09:16.086971+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 3,
       "categories": {
@@ -324,7 +348,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.522651+00:00",
+      "timestamp": "2026-11-16T03:09:16.085921+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 3,
       "categories": {
@@ -333,7 +357,7 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.521463+00:00",
+      "timestamp": "2026-11-16T03:09:16.084786+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
@@ -341,38 +365,13 @@
       }
     },
     {
-      "timestamp": "2026-11-16T02:11:26.520874+00:00",
+      "timestamp": "2026-11-16T03:09:16.084234+00:00",
       "source": "mcp_guardrail",
       "total_redacted": 1,
       "categories": {
         "email": 1
-      }
-    },
-    {
-      "timestamp": "2026-11-16T02:11:26.518071+00:00",
-      "source": "mcp_guardrail",
-      "total_redacted": 2,
-      "categories": {
-        "phone": 2
-      }
-    },
-    {
-      "timestamp": "2026-11-16T02:11:26.516927+00:00",
-      "source": "mcp_guardrail",
-      "total_redacted": 12,
-      "categories": {
-        "email": 10,
-        "phone": 2
-      }
-    },
-    {
-      "timestamp": "2026-11-16T02:11:26.514126+00:00",
-      "source": "mcp_guardrail",
-      "total_redacted": 1,
-      "categories": {
-        "credit_card": 1
       }
     }
   ],
-  "updated_at": "2026-11-16T02:11:26.607058+00:00"
+  "updated_at": "2026-11-16T03:09:16.174376+00:00"
 }

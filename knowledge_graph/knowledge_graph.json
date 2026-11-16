@@ -2,15 +2,15 @@
   "metadata": {
     "kg_version": "4.4.1",
     "repository": "/home/krithika/workspace/Fuel",
-    "generated_at": "2026-11-16T02:11:26.627282+00:00",
-    "total_files_indexed": 11,
-    "total_nodes": 220,
-    "total_edges": 270,
+    "generated_at": "2026-11-16T03:09:16.197274+00:00",
+    "total_files_indexed": 13,
+    "total_nodes": 282,
+    "total_edges": 437,
     "node_type_counts": {
-      "chat_session": 4,
-      "chat_turn": 29,
+      "chat_session": 6,
+      "chat_turn": 52,
       "config_file": 2,
-      "document": 1,
+      "document": 2,
       "document_file": 2,
       "document_section": 15,
       "document_table": 1,
@@ -18,36 +18,33 @@
       "python_function": 1,
       "python_module": 1,
       "shell_script": 2,
-      "topic_entity": 160
+      "topic_entity": 196
     }
   },
   "last_change_check": {
     "changed": true,
     "added": [
-      "get_kalibrate_canada_ave.py"
+      "QWEN.md",
+      "chats/SHARED_SESSION_STATE.md"
     ],
-    "modified": [
-      "Bison_FSC_Latest.pdf",
-      "FUEL_AUTOMATION_GUIDE.md",
-      "Fuel_Surcharge_Report.html"
-    ],
+    "modified": [],
     "removed": [],
-    "files_parsed": 4,
-    "files_cached_reused": 6,
+    "files_parsed": 1,
+    "files_cached_reused": 10,
     "sqlite_delta": {
       "mode": "delta_update",
       "db_path": "/home/krithika/workspace/Fuel/knowledge_graph/knowledge_graph.db",
-      "nodes_upserted": 57,
-      "nodes_deleted": 79,
-      "edges_upserted": 54,
-      "edges_deleted": 175,
+      "nodes_upserted": 68,
+      "nodes_deleted": 4,
+      "edges_upserted": 175,
+      "edges_deleted": 8,
       "wiki_pages_upserted": 1,
       "wiki_pages_deleted": 0,
-      "files_upserted": 5,
+      "files_upserted": 3,
       "files_deleted": 0,
-      "total_nodes_in_db": 220,
-      "total_edges_in_db": 270,
-      "total_files_tracked": 12
+      "total_nodes_in_db": 282,
+      "total_edges_in_db": 437,
+      "total_files_tracked": 14
     }
   },
   "nodes": [
@@ -1009,7 +1006,7 @@
       "id": "topic:canada",
       "type": "topic_entity",
       "name": "canada",
-      "file_path": "Kalibrate_Diesel_Weekly_2026.xlsx",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
       "description": "Shared domain topic 'canada' connecting multi-modal documents and workspace chats",
       "metadata": {
         "keyword": "canada"
@@ -1226,6 +1223,79 @@
       }
     },
     {
+      "id": "doc:QWEN.md",
+      "type": "document",
+      "name": "QWEN.md \u2014 Mandatory Shared Instructions & Live State Sync (`Fuel`)",
+      "file_path": "QWEN.md",
+      "description": "Documentation: QWEN.md \u2014 Mandatory Shared Instructions & Live State Sync (`Fuel`) (QWEN.md)",
+      "metadata": {
+        "sections": [
+          "QWEN.md \u2014 Mandatory Shared Instructions & Live State Sync (`Fuel`)",
+          "1. Communication Rules",
+          "2. Weekly Monday & Tuesday Fuel Surcharge Rules",
+          "3. Mandatory Knowledge Graph & Dual-Agent Sync"
+        ],
+        "keywords": [
+          "CRITICAL FOR QWEN & ANTIGRAVITY",
+          "exact same Weekly Monday & Tuesday Fuel Surcharge automation session",
+          "Cathy",
+          "Always address the user as `Cathy`",
+          "100% Plain English \u2014 ZERO LaTeX (`$...$`) in Zed chat",
+          "Monday Fuel (`monday fuel` trigger)",
+          "Oceanex",
+          "Full Load TL2 (10,000 \u2013 54,999 lbs)",
+          "CN 7404 (Weekly Intermodal)",
+          "Avg. Weekly OHD Price",
+          "Intra-Canada",
+          "CN 7405 (Monthly Intermodal)",
+          "Avg. OHD Price",
+          "Bison Transport",
+          "Intermodal (Within Canada)",
+          "Tuesday Fuel (`tuesday fuel` / `kalibrate` trigger)",
+          "Kalibrate \u2013 Canada Fuel",
+          "Row 81: `Canada Ave(V)`",
+          "Fuel",
+          "use qwen",
+          "stop qwen",
+          "/home/krithika/workspace/Fuel/chats/SHARED_SESSION_STATE.md",
+          "/home/krithika/workspace/Fuel/FUEL_AUTOMATION_GUIDE.md",
+          "Oceanex TL2",
+          "CN 7404 & 7405 Intra-Canada",
+          "Bison Intermodal Within Canada",
+          "Kalibrate Tuesday Release Row 81 Canada Ave(V)",
+          "chats/SHARED_SESSION_STATE.md",
+          "Fuel_Surcharge_Report.html",
+          "query_kg.py --commit-push",
+          "$...$",
+          "\\rightarrow",
+          "\\le",
+          "->",
+          "at most",
+          "monday fuel",
+          "POST https://ws.oceanex.com/ws/website/fuel-surcharge/list",
+          "{\"nbOfWeeks\":4}",
+          ".results[-1].label",
+          ".results[-1].tl2",
+          "/home/krithika/workspace/Oceanex/run-oceanexfuel.sh",
+          "https://www.cn.ca/en/customer-centre/prices-tariffs-transit-times/fuel-surcharge",
+          ", saved locally to",
+          "tuesday fuel",
+          "kalibrate",
+          "Diesel -> Retail (Incl. Tax) -> Weekly -> <Year>",
+          "python3 /home/krithika/workspace/Fuel/get_kalibrate_canada_ave.py",
+          "Get-KalibrateCanadaAveV.ps1",
+          "Canada Ave(V)",
+          "c/L",
+          "/home/krithika/workspace/Fuel/Fuel_Surcharge_Report.html",
+          "(NEVER",
+          ") so",
+          "AND PostgreSQL",
+          "("
+        ],
+        "format": "md"
+      }
+    },
+    {
       "id": "py_module:get_kalibrate_canada_ave.py",
       "type": "python_module",
       "name": "get_kalibrate_canada_ave",
@@ -1308,6 +1378,360 @@
       "metadata": {
         "lines": 8,
         "functions": []
+      }
+    },
+    {
+      "id": "topic:fuel",
+      "type": "topic_entity",
+      "name": "fuel",
+      "file_path": "chats/transcript_2b8bc1fe.jsonl",
+      "description": "Shared domain topic 'fuel' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "fuel"
+      }
+    },
+    {
+      "id": "topic:intermodal",
+      "type": "topic_entity",
+      "name": "intermodal",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Shared domain topic 'intermodal' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "intermodal"
+      }
+    },
+    {
+      "id": "topic:home",
+      "type": "topic_entity",
+      "name": "home",
+      "file_path": "chats/transcript_b6556366.jsonl",
+      "description": "Shared domain topic 'home' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "home"
+      }
+    },
+    {
+      "id": "topic:intra-canada",
+      "type": "topic_entity",
+      "name": "intra-canada",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'intra-canada' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "intra-canada"
+      }
+    },
+    {
+      "id": "topic:krithika",
+      "type": "topic_entity",
+      "name": "krithika",
+      "file_path": "chats/transcript_2b8bc1fe.jsonl",
+      "description": "Shared domain topic 'krithika' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "krithika"
+      }
+    },
+    {
+      "id": "topic:november",
+      "type": "topic_entity",
+      "name": "november",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Shared domain topic 'november' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "november"
+      }
+    },
+    {
+      "id": "topic:qwen",
+      "type": "topic_entity",
+      "name": "qwen",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'qwen' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "qwen"
+      }
+    },
+    {
+      "id": "chat_session:SHAREDSE",
+      "type": "chat_session",
+      "name": "Chat Session SHAREDSE",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Chat Session SHAREDSE (8 turns): # Shared Antigravity <-> Qwen Live Session State (`Fuel`)",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "short_id": "SHAREDSE",
+        "turn_count": 8,
+        "first_question": "# Shared Antigravity <-> Qwen Live Session State (`Fuel`)",
+        "source": "chats_folder",
+        "topics": [
+          "fuel",
+          "intermodal",
+          "canada",
+          "home",
+          "intra-canada",
+          "krithika",
+          "november",
+          "qwen"
+        ]
+      }
+    },
+    {
+      "id": "topic:antigravity",
+      "type": "topic_entity",
+      "name": "antigravity",
+      "file_path": "chats/transcript_b6556366.jsonl",
+      "description": "Shared domain topic 'antigravity' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "antigravity"
+      }
+    },
+    {
+      "id": "topic:live",
+      "type": "topic_entity",
+      "name": "live",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'live' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "live"
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S1",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S1 (user)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[USER S1] # Shared Antigravity <-> Qwen Live Session State (`Fuel`)",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 1,
+        "role": "user",
+        "created_at": "",
+        "content_excerpt": "# Shared Antigravity <-> Qwen Live Session State (`Fuel`)",
+        "topics": [
+          "antigravity",
+          "fuel",
+          "live",
+          "qwen"
+        ]
+      }
+    },
+    {
+      "id": "topic:agents",
+      "type": "topic_entity",
+      "name": "agents",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'agents' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "agents"
+      }
+    },
+    {
+      "id": "topic:context",
+      "type": "topic_entity",
+      "name": "context",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'context' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "context"
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S2",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S2 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S2] > **Purpose**: Single source of truth shared between **Antigravity** and **Qwen** (`QWEN.md` + `rules.md` + `kg_vectors_fuel`). Both agents MUST read this file first and update it whenever pulling weekly fuel surcharges ",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 2,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "> **Purpose**: Single source of truth shared between **Antigravity** and **Qwen** (`QWEN.md` + `rules.md` + `kg_vectors_fuel`). Both agents MUST read this file first and update it whenever pulling weekly fuel surcharges so mode switches (`use qwen` / `stop qwen`) never lose context.",
+        "topics": [
+          "qwen",
+          "agents",
+          "antigravity",
+          "context"
+        ]
+      }
+    },
+    {
+      "id": "topic:cathy",
+      "type": "topic_entity",
+      "name": "cathy",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'cathy' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "cathy"
+      }
+    },
+    {
+      "id": "topic:developer",
+      "type": "topic_entity",
+      "name": "developer",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'developer' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "developer"
+      }
+    },
+    {
+      "id": "topic:last",
+      "type": "topic_entity",
+      "name": "last",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'last' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "last"
+      }
+    },
+    {
+      "id": "topic:preferred",
+      "type": "topic_entity",
+      "name": "preferred",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'preferred' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "preferred"
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S3",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S3 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S3] - **Developer Preferred Name**: **Cathy** - **Last Synced**: `2026-11-16`",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 3,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "- **Developer Preferred Name**: **Cathy**\n- **Last Synced**: `2026-11-16`",
+        "topics": [
+          "cathy",
+          "developer",
+          "last",
+          "preferred"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S4",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S4 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S4] ---",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 4,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "---",
+        "topics": []
+      }
+    },
+    {
+      "id": "topic:latest",
+      "type": "topic_entity",
+      "name": "latest",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "Shared domain topic 'latest' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "latest"
+      }
+    },
+    {
+      "id": "topic:monday",
+      "type": "topic_entity",
+      "name": "monday",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Shared domain topic 'monday' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "monday"
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S5",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S5 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S5] ## 1. Latest Pulled Weekly Fuel Surcharge Rates (Week of Monday, November 16, 2026)",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 5,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "## 1. Latest Pulled Weekly Fuel Surcharge Rates (Week of Monday, November 16, 2026)",
+        "topics": [
+          "fuel",
+          "latest",
+          "monday",
+          "november"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S6",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S6 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S6] | Carrier / Source | Category | Effective Date | Avg. OHD Price | Rate / Price | | :--- | :--- | :--- | :--- | :--- | | **Oceanex** | Full Load TL2 (10,000 \u2013 54,999 lbs) | November 16, 2026 | \u2014 | **`118.1%`** | | **CN 74",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 6,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "| Carrier / Source | Category | Effective Date | Avg. OHD Price | Rate / Price |\n| :--- | :--- | :--- | :--- | :--- |\n| **Oceanex** | Full Load TL2 (10,000 \u2013 54,999 lbs) | November 16, 2026 | \u2014 | **`118.1%`** |\n| **CN 7404** | Intra-Canada (Weekly Intermodal) | November 16, 2026 | **`$6.127`** | **`39.26%`** |\n| **CN 7405** | Intra-Canada (Monthly Intermodal) | November 2026 | **`$6.291`** | **`40.64%`** |\n| **CN 7405 (Upcoming)** | Intra-Canada (Monthly Intermodal) | December 2026 | **`$6.252`** | **`40.18%`** |\n| **Bison Transport** | Intermodal (Within Canada) | November 16 \u2013 30, 2026 | \u2014 | **`42.04%`** |\n| **Kalibrate (Tuesday Release)** | Canada Ave(V) \u2013 Diesel Retail (Incl. Tax) | Releases Tue, Nov 17, 2026 *(Prior 11/10)* | \u2014 | *Pending Tue (`253.3 c/L` on `11/10`)* |",
+        "topics": [
+          "intermodal",
+          "november",
+          "intra-canada",
+          "canada"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S7",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S7 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S7] ---",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 7,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "---",
+        "topics": []
+      }
+    },
+    {
+      "id": "topic:workspace",
+      "type": "topic_entity",
+      "name": "workspace",
+      "file_path": "chats/transcript_2b8bc1fe.jsonl",
+      "description": "Shared domain topic 'workspace' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "workspace"
+      }
+    },
+    {
+      "id": "chat_turn:SHAREDSE:S8",
+      "type": "chat_turn",
+      "name": "Chat SHAREDSE Turn S8 (assistant)",
+      "file_path": "chats/SHARED_SESSION_STATE.md",
+      "description": "[ASSISTANT S8] ## 2. Exact Source Endpoints & Scripts 1. **Oceanex TL2 JSON API (Cloudflare-free)**: - `POST https://ws.oceanex.com/ws/website/fuel-surcharge/list` with JSON body `{\"nbOfWeeks\":4}` -> `.results[-1].label` and `.results[",
+      "metadata": {
+        "conversation_id": "SHAREDSE",
+        "step_index": 8,
+        "role": "assistant",
+        "created_at": "",
+        "content_excerpt": "## 2. Exact Source Endpoints & Scripts\n1. **Oceanex TL2 JSON API (Cloudflare-free)**:\n   - `POST https://ws.oceanex.com/ws/website/fuel-surcharge/list` with JSON body `{\"nbOfWeeks\":4}` -> `.results[-1].label` and `.results[-1].tl2`.\n   - Companion Linux launcher: `/home/krithika/workspace/Oceanex/run-oceanexfuel.sh` (`get_oceanex_fuel.py`).\n2. **CN 7404 & CN 7405 Intra-Canada**:\n   - `https://www.cn.ca/en/customer-centre/prices-tariffs-transit-times/fuel-surcharge` (extract ONLY **Intra-Canada** and **Avg. OHD Price**; exclude US/Cross-Border/Carload).\n3. **Bison Transport Intermodal (Within Canada)**:\n   - PDF URL: `https://img.bisontransport.com/public/resources/pdf/documents/bison_transport/1033-canada_crossborder_domestic_fuel_surcharge.pdf` -> saved locally to `/home/krithika/workspac",
+        "topics": [
+          "home",
+          "krithika",
+          "workspace",
+          "fuel"
+        ]
       }
     },
     {
@@ -1953,6 +2377,564 @@
       }
     },
     {
+      "id": "topic:power-automate",
+      "type": "topic_entity",
+      "name": "power-automate",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'power-automate' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "power-automate"
+      }
+    },
+    {
+      "id": "topic:accrual",
+      "type": "topic_entity",
+      "name": "accrual",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'accrual' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "accrual"
+      }
+    },
+    {
+      "id": "topic:jsonl",
+      "type": "topic_entity",
+      "name": "jsonl",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'jsonl' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "jsonl"
+      }
+    },
+    {
+      "id": "topic:chats",
+      "type": "topic_entity",
+      "name": "chats",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'chats' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "chats"
+      }
+    },
+    {
+      "id": "topic:phase",
+      "type": "topic_entity",
+      "name": "phase",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'phase' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "phase"
+      }
+    },
+    {
+      "id": "chat_session:6e8422d1",
+      "type": "chat_session",
+      "name": "Chat Session 6e8422d1",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Chat Session 6e8422d1 (14 turns): do you have Erin's & Becky's files as samples? Do you recall Archive and send? <USER_SETTINGS_CHANGE> The user changed setting `Model Selection` from None to Ge",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "short_id": "6e8422d1",
+        "turn_count": 14,
+        "first_question": "do you have Erin's & Becky's files as samples? Do you recall Archive and send? <USER_SETTINGS_CHANGE> The user changed setting `Model Selection` from None to Ge",
+        "source": "antigravity_transcript",
+        "topics": [
+          "workspace",
+          "home",
+          "krithika",
+          "power-automate",
+          "accrual",
+          "jsonl",
+          "chats",
+          "phase"
+        ]
+      }
+    },
+    {
+      "id": "topic:accrual_automation_guide",
+      "type": "topic_entity",
+      "name": "accrual_automation_guide",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'accrual_automation_guide' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "accrual_automation_guide"
+      }
+    },
+    {
+      "id": "topic:automate",
+      "type": "topic_entity",
+      "name": "automate",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'automate' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "automate"
+      }
+    },
+    {
+      "id": "topic:becky_erin_excel_office_scripts",
+      "type": "topic_entity",
+      "name": "becky_erin_excel_office_scripts",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'becky_erin_excel_office_scripts' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "becky_erin_excel_office_scripts"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S48",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S48 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S48] I have read all four files (`ONBOARDING.md`, `ACCRUAL_AUTOMATION_GUIDE.md`, `Becky_Erin_Excel_Office_Scripts.md`, and `Power_Automate_Complete_Script.md`), synced the uploaded files and `chats/` transcripts from `Power A",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 48,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:53:56Z",
+        "content_excerpt": "I have read all four files (`ONBOARDING.md`, `ACCRUAL_AUTOMATION_GUIDE.md`, `Becky_Erin_Excel_Office_Scripts.md`, and `Power_Automate_Complete_Script.md`), synced the uploaded files and `chats/` transcripts from `Power Automate` into `Power-Automate`, and launched the Knowledge Graph + `pgvector` ingestion and Git commit/push\u2014waiting a moment for that final sync step to finish so I can confirm 100% completion.",
+        "topics": [
+          "accrual_automation_guide",
+          "automate",
+          "becky_erin_excel_office_scripts",
+          "chats"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S50",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S50 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S50] **100% Confirmed & Ingested, Cathy!** \ud83c\udf89\u2705 *(Quick catch on why those files looked missing a moment ago: the uploader had placed them in `/home/krithika/workspace/Power Automate` with a space, while this workspace is `/hom",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 50,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:54:41Z",
+        "content_excerpt": "**100% Confirmed & Ingested, Cathy!** \ud83c\udf89\u2705\n\n*(Quick catch on why those files looked missing a moment ago: the uploader had placed them in `/home/krithika/workspace/Power Automate` with a space, while this workspace is `/home/krithika/workspace/Power-Automate` with a hyphen. I synced everything into `/home/krithika/workspace/Power-Automate`, rebuilt the Knowledge Graph, upserted all **350 nodes / 601 edges** into PostgreSQL `pgvector` (`kg_vectors_power_automate`), and pushed commit `0d66878` to GitHub!)*\n\n---\n\n### \ud83d\udcc2 Files Read & Indexed into Knowledge Graph (`350` Nodes, `29` Files)\n- **Guides & Scripts:**\n  - [ONBOARDING.md](file:///home/krithika/workspace/Power-Automate/ONBOARDING.md) & [rules.md](file:///home/krithika/workspace/Power-Automate/rules.md)\n  - [ACCRUAL_AUTOMATION_GUIDE.md](fi",
+        "topics": [
+          "workspace",
+          "home",
+          "krithika",
+          "power-automate"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S51",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S51 (user)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[USER S51] Please read @ONBOARDING.md, @ACCRUAL_AUTOMATION_GUIDE.md, @Becky_Erin_Excel_Office_Scripts.md, and @Power_Automate_Complete_Script.md, and ingest the conversation transcripts in the `chats/` folder (`transcript.jsonl`, `",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 51,
+        "role": "user",
+        "created_at": "2026-11-16T02:56:15Z",
+        "content_excerpt": "Please read @ONBOARDING.md, @ACCRUAL_AUTOMATION_GUIDE.md, @Becky_Erin_Excel_Office_Scripts.md, and @Power_Automate_Complete_Script.md, and ingest the conversation transcripts in the `chats/` folder (`transcript.jsonl`, `transcript_Becky_Erin_Accrual_OfficeScripts.jsonl`, and `transcript_Phase3_Carrier_Replies_Foodliner_Venezia_Bulkmatic.jsonl`) into the knowledge graph so you have 100% context on our SharePoint `/Truck/Accrual/Send` Power Automate flow, our Phase 2 Excel Office Script for Becky's US and Erin's CAD raw files, and our Phase 3 `Re: Accrual Open` carrier reply automation. Confirm once ingested!",
+        "topics": [
+          "jsonl",
+          "accrual",
+          "phase",
+          "accrual_automation_guide"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S56",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S56 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S56] **100% Confirmed & Ingested!** \u2705 All four documentation files and all conversation transcripts in `chats/` have been read and indexed into both the local Knowledge Graph (`knowledge_graph.db` / `knowledge_graph.json`) an",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 56,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:56:40Z",
+        "content_excerpt": "**100% Confirmed & Ingested!** \u2705\n\nAll four documentation files and all conversation transcripts in `chats/` have been read and indexed into both the local Knowledge Graph (`knowledge_graph.db` / `knowledge_graph.json`) and PostgreSQL `pgvector` (`kg_vectors_power_automate` \u2014 **29 files, 221 nodes, 378 edges, 221 vectors**):\n\n### 1. Read & Verified Files\n- [ONBOARDING.md](file:///home/krithika/workspace/Power-Automate/ONBOARDING.md) & [rules.md](file:///home/krithika/workspace/Power-Automate/rules.md)\n- [ACCRUAL_AUTOMATION_GUIDE.md](file:///home/krithika/workspace/Power-Automate/ACCRUAL_AUTOMATION_GUIDE.md)\n- [Becky_Erin_Excel_Office_Scripts.md](file:///home/krithika/workspace/Power-Automate/Becky_Erin_Excel_Office_Scripts.md)\n- [Power_Automate_Complete_Script.md](file:///home/krithika/work",
+        "topics": [
+          "accrual",
+          "home",
+          "krithika",
+          "power-automate"
+        ]
+      }
+    },
+    {
+      "id": "topic:ardent",
+      "type": "topic_entity",
+      "name": "ardent",
+      "file_path": "chats/transcript_b6556366.jsonl",
+      "description": "Shared domain topic 'ardent' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "ardent"
+      }
+    },
+    {
+      "id": "topic:bookmark",
+      "type": "topic_entity",
+      "name": "bookmark",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'bookmark' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "bookmark"
+      }
+    },
+    {
+      "id": "topic:continue",
+      "type": "topic_entity",
+      "name": "continue",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'continue' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "continue"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S57",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S57 (user)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[USER S57] Please read @ONBOARDING.md, @VAULT_STUDY_HANDOFF.md, and @app.ts, and ingest `chats/transcript.jsonl` into the knowledge graph. Then continue teaching me the Ardent Mills Vault program starting at our exact bookmark (Lin",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 57,
+        "role": "user",
+        "created_at": "2026-11-16T02:56:57Z",
+        "content_excerpt": "Please read @ONBOARDING.md, @VAULT_STUDY_HANDOFF.md, and @app.ts, and ingest `chats/transcript.jsonl` into the knowledge graph. Then continue teaching me the Ardent Mills Vault program starting at our exact bookmark (Line 60: <mat-sidenav-content>), strictly 1-2 lines at a time, slow, without rushing me!",
+        "topics": [
+          "ardent",
+          "bookmark",
+          "chats",
+          "continue"
+        ]
+      }
+    },
+    {
+      "id": "topic:vault-study-session",
+      "type": "topic_entity",
+      "name": "vault-study-session",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'vault-study-session' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "vault-study-session"
+      }
+    },
+    {
+      "id": "topic:mat-sidenav-content",
+      "type": "topic_entity",
+      "name": "mat-sidenav-content",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'mat-sidenav-content' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "mat-sidenav-content"
+      }
+    },
+    {
+      "id": "topic:activemenu",
+      "type": "topic_entity",
+      "name": "activemenu",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'activemenu' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "activemenu"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S68",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S68 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S68] \u2705 **Confirmed & Ingested!** I read [ONBOARDING.md](file:///home/krithika/workspace/Vault-Study-Session/ONBOARDING.md), [VAULT_STUDY_HANDOFF.md](file:///home/krithika/workspace/Vault-Study-Session/VAULT_STUDY_HANDOFF.md),",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 68,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:57:48Z",
+        "content_excerpt": "\u2705 **Confirmed & Ingested!** I read [ONBOARDING.md](file:///home/krithika/workspace/Vault-Study-Session/ONBOARDING.md), [VAULT_STUDY_HANDOFF.md](file:///home/krithika/workspace/Vault-Study-Session/VAULT_STUDY_HANDOFF.md), and [app.ts](file:///home/krithika/workspace/Vault-Study-Session/app.ts), and synced [chats/transcript.jsonl](file:///home/krithika/workspace/Vault-Study-Session/chats/transcript.jsonl) into your `Vault-Study-Session` Knowledge Graph & `pgvector` (`195` nodes). *(Note: this Zed tab is attached to `Power-Automate`, so if you ever switch over to your `Vault-Study-Session` Zed window, everything is already waiting in its Knowledge Graph too\u2014and we can continue right here seamlessly!)*\n\n---\n\n### \ud83d\udccd Bookmark: Lines 60\u201361 of [app.ts](file:///home/krithika/workspace/Vault-Study-Se",
+        "topics": [
+          "vault-study-session",
+          "mat-sidenav-content",
+          "activemenu",
+          "home"
+        ]
+      }
+    },
+    {
+      "id": "topic:update",
+      "type": "topic_entity",
+      "name": "update",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'update' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "update"
+      }
+    },
+    {
+      "id": "topic:commit",
+      "type": "topic_entity",
+      "name": "commit",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'commit' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "commit"
+      }
+    },
+    {
+      "id": "topic:everything",
+      "type": "topic_entity",
+      "name": "everything",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'everything' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "everything"
+      }
+    },
+    {
+      "id": "topic:please",
+      "type": "topic_entity",
+      "name": "please",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'please' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "please"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S69",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S69 (user)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[USER S69] please commit everything, update KG, update qwen too",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 69,
+        "role": "user",
+        "created_at": "2026-11-16T02:58:26Z",
+        "content_excerpt": "please commit everything, update KG, update qwen too",
+        "topics": [
+          "update",
+          "commit",
+          "everything",
+          "please"
+        ]
+      }
+    },
+    {
+      "id": "topic:committed",
+      "type": "topic_entity",
+      "name": "committed",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'committed' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "committed"
+      }
+    },
+    {
+      "id": "topic:confirm",
+      "type": "topic_entity",
+      "name": "confirm",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'confirm' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "confirm"
+      }
+    },
+    {
+      "id": "topic:finishing",
+      "type": "topic_entity",
+      "name": "finishing",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'finishing' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "finishing"
+      }
+    },
+    {
+      "id": "topic:moment",
+      "type": "topic_entity",
+      "name": "moment",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'moment' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "moment"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S90",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S90 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S90] `Power-Automate` is committed, pushed, and synced with Qwen + KG (`258` nodes / `258` vectors), and `Vault-Study-Session` is finishing its Git push right now\u2014I will confirm both in just a moment!",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 90,
+        "role": "assistant",
+        "created_at": "2026-11-16T03:02:44Z",
+        "content_excerpt": "`Power-Automate` is committed, pushed, and synced with Qwen + KG (`258` nodes / `258` vectors), and `Vault-Study-Session` is finishing its Git push right now\u2014I will confirm both in just a moment!",
+        "topics": [
+          "committed",
+          "confirm",
+          "finishing",
+          "moment"
+        ]
+      }
+    },
+    {
+      "id": "topic:rules",
+      "type": "topic_entity",
+      "name": "rules",
+      "file_path": "chats/transcript_b6556366.jsonl",
+      "description": "Shared domain topic 'rules' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "rules"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S92",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S92 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S92] **100% Committed, Pushed, KG Updated, and Qwen Synced Across Both Workspaces!** \u2705 ### 1. `Power-Automate` (`ee1eeb4` -> `origin/main`) - **Qwen + Antigravity Shared Sync Added**: - [QWEN.md](file:///home/krithika/workspa",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 92,
+        "role": "assistant",
+        "created_at": "2026-11-16T03:04:31Z",
+        "content_excerpt": "**100% Committed, Pushed, KG Updated, and Qwen Synced Across Both Workspaces!** \u2705\n\n### 1. `Power-Automate` (`ee1eeb4` -> `origin/main`)\n- **Qwen + Antigravity Shared Sync Added**:\n  - [QWEN.md](file:///home/krithika/workspace/Power-Automate/QWEN.md)\n  - [SHARED_SESSION_STATE.md](file:///home/krithika/workspace/Power-Automate/chats/SHARED_SESSION_STATE.md)\n  - [rules.md](file:///home/krithika/workspace/Power-Automate/rules.md) & [.agents/rules/rules.md](file:///home/krithika/workspace/Power-Automate/.agents/rules/rules.md)\n- **Knowledge Graph & `pgvector` (`kg_vectors_power_automate`)**:\n  - **31 files indexed | 258 nodes | 451 edges | 258 vectors** synced via GPU (`agx`).\n  - Now whenever you use `use qwen` or `stop qwen`, Qwen immediately knows 100% of Becky's US file, Erin's CAD file, Sh",
+        "topics": [
+          "rules",
+          "home",
+          "krithika",
+          "qwen"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S93",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S93 (user)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[USER S93] Please read @ONBOARDING.md, @ACCRUAL_AUTOMATION_GUIDE.md, @Becky_Erin_Excel_Office_Scripts.md, and @Power_Automate_Complete_Script.md, and ingest the conversation transcripts in the `chats/` folder (`transcript.jsonl`, `",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 93,
+        "role": "user",
+        "created_at": "2026-11-16T03:05:02Z",
+        "content_excerpt": "Please read @ONBOARDING.md, @ACCRUAL_AUTOMATION_GUIDE.md, @Becky_Erin_Excel_Office_Scripts.md, and @Power_Automate_Complete_Script.md, and ingest the conversation transcripts in the `chats/` folder (`transcript.jsonl`, `transcript_Becky_Erin_Accrual_OfficeScripts.jsonl`, and `transcript_Phase3_Carrier_Replies_Foodliner_Venezia_Bulkmatic.jsonl`) into the knowledge graph so you have 100% context on our SharePoint `/Truck/Accrual/Send` Power Automate flow, our Phase 2 Excel Office Script for Becky's US and Erin's CAD raw files, and our Phase 3 `Re: Accrual Open` carrier reply automation. Confirm once ingested!",
+        "topics": [
+          "jsonl",
+          "accrual",
+          "phase",
+          "accrual_automation_guide"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S96",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S96 (assistant)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[ASSISTANT S96] **100% Confirmed & Ingested, Cathy!** \u2705 Everything in `/home/krithika/workspace/Power-Automate` is read, indexed in the Knowledge Graph, synced to PostgreSQL `pgvector` (`kg_vectors_power_automate`), shared with Qwen via",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 96,
+        "role": "assistant",
+        "created_at": "2026-11-16T03:05:19Z",
+        "content_excerpt": "**100% Confirmed & Ingested, Cathy!** \u2705\n\nEverything in `/home/krithika/workspace/Power-Automate` is read, indexed in the Knowledge Graph, synced to PostgreSQL `pgvector` (`kg_vectors_power_automate`), shared with Qwen via [QWEN.md](file:///home/krithika/workspace/Power-Automate/QWEN.md) and [SHARED_SESSION_STATE.md](file:///home/krithika/workspace/Power-Automate/chats/SHARED_SESSION_STATE.md), and cleanly pushed to GitHub (`31` files indexed | `258` nodes | `451` edges | `258` vectors | working tree clean).\n\n### Verified & Loaded in Context\n1. **Guides & Scripts Read**:\n   - [ONBOARDING.md](file:///home/krithika/workspace/Power-Automate/ONBOARDING.md)\n   - [ACCRUAL_AUTOMATION_GUIDE.md](file:///home/krithika/workspace/Power-Automate/ACCRUAL_AUTOMATION_GUIDE.md)\n   - [Becky_Erin_Excel_Office",
+        "topics": [
+          "home",
+          "krithika",
+          "power-automate",
+          "workspace"
+        ]
+      }
+    },
+    {
+      "id": "topic:tuesday",
+      "type": "topic_entity",
+      "name": "tuesday",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'tuesday' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "tuesday"
+      }
+    },
+    {
+      "id": "topic:automation",
+      "type": "topic_entity",
+      "name": "automation",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'automation' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "automation"
+      }
+    },
+    {
+      "id": "topic:bison",
+      "type": "topic_entity",
+      "name": "bison",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "Shared domain topic 'bison' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "bison"
+      }
+    },
+    {
+      "id": "chat_turn:6e8422d1:S97",
+      "type": "chat_turn",
+      "name": "Chat 6e8422d1 Turn S97 (user)",
+      "file_path": "chats/transcript_6e8422d1.jsonl",
+      "description": "[USER S97] Please read @ONBOARDING.md, @FUEL_AUTOMATION_GUIDE.md, @Fuel_Surcharge_Report.html, and @Get-KalibrateCanadaAveV.ps1, and ingest `chats/transcript.jsonl` into the knowledge graph so you have 100% context on our weekly Mo",
+      "metadata": {
+        "conversation_id": "6e8422d1-502b-4ee9-80ee-11047f405f35",
+        "step_index": 97,
+        "role": "user",
+        "created_at": "2026-11-16T03:05:37Z",
+        "content_excerpt": "Please read @ONBOARDING.md, @FUEL_AUTOMATION_GUIDE.md, @Fuel_Surcharge_Report.html, and @Get-KalibrateCanadaAveV.ps1, and ingest `chats/transcript.jsonl` into the knowledge graph so you have 100% context on our weekly Monday and Tuesday Fuel Surcharge automation (Oceanex TL2 JSON API, CN 7404 & 7405 Intra-Canada, Bison Intermodal Within Canada PDF, and Kalibrate Tuesday Release Row 81 Canada Ave(V)). Confirm once ingested!",
+        "topics": [
+          "canada",
+          "tuesday",
+          "automation",
+          "bison"
+        ]
+      }
+    },
+    {
+      "id": "topic:fuel_surcharge_report",
+      "type": "topic_entity",
+      "name": "fuel_surcharge_report",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Shared domain topic 'fuel_surcharge_report' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "fuel_surcharge_report"
+      }
+    },
+    {
+      "id": "chat_session:6e787d05",
+      "type": "chat_session",
+      "name": "Chat Session 6e787d05",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Chat Session 6e787d05 (5 turns): monday fuel <USER_SETTINGS_CHANGE> The user changed setting `Model Selection` from None to Gemini 4 Carbon (Medium). No need to comment on this change if the us",
+      "metadata": {
+        "conversation_id": "6e787d05-7427-4ef5-a4aa-d34b8c1b5192",
+        "short_id": "6e787d05",
+        "turn_count": 5,
+        "first_question": "monday fuel <USER_SETTINGS_CHANGE> The user changed setting `Model Selection` from None to Gemini 4 Carbon (Medium). No need to comment on this change if the us",
+        "source": "antigravity_transcript",
+        "topics": [
+          "fuel",
+          "november",
+          "home",
+          "krithika",
+          "workspace",
+          "intermodal",
+          "monday",
+          "fuel_surcharge_report"
+        ]
+      }
+    },
+    {
       "id": "topic:model",
       "type": "topic_entity",
       "name": "model",
@@ -1990,70 +2972,6 @@
       "description": "Shared domain topic 'change' connecting multi-modal documents and workspace chats",
       "metadata": {
         "keyword": "change"
-      }
-    },
-    {
-      "id": "topic:changed",
-      "type": "topic_entity",
-      "name": "changed",
-      "file_path": "chats/transcript_6e787d05.jsonl",
-      "description": "Shared domain topic 'changed' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "changed"
-      }
-    },
-    {
-      "id": "topic:comment",
-      "type": "topic_entity",
-      "name": "comment",
-      "file_path": "chats/transcript_6e787d05.jsonl",
-      "description": "Shared domain topic 'comment' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "comment"
-      }
-    },
-    {
-      "id": "topic:doesn",
-      "type": "topic_entity",
-      "name": "doesn",
-      "file_path": "chats/transcript_6e787d05.jsonl",
-      "description": "Shared domain topic 'doesn' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "doesn"
-      }
-    },
-    {
-      "id": "topic:exact",
-      "type": "topic_entity",
-      "name": "exact",
-      "file_path": "chats/transcript_6e787d05.jsonl",
-      "description": "Shared domain topic 'exact' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "exact"
-      }
-    },
-    {
-      "id": "chat_session:6e787d05",
-      "type": "chat_session",
-      "name": "Chat Session 6e787d05",
-      "file_path": "chats/transcript_6e787d05.jsonl",
-      "description": "Chat Session 6e787d05 (2 turns): monday fuel <USER_SETTINGS_CHANGE> The user changed setting `Model Selection` from None to Gemini 4 Carbon (Medium). No need to comment on this change if the us",
-      "metadata": {
-        "conversation_id": "6e787d05-7427-4ef5-a4aa-d34b8c1b5192",
-        "short_id": "6e787d05",
-        "turn_count": 2,
-        "first_question": "monday fuel <USER_SETTINGS_CHANGE> The user changed setting `Model Selection` from None to Gemini 4 Carbon (Medium). No need to comment on this change if the us",
-        "source": "antigravity_transcript",
-        "topics": [
-          "model",
-          "user_settings_change",
-          "carbon",
-          "change",
-          "changed",
-          "comment",
-          "doesn",
-          "exact"
-        ]
       }
     },
     {
@@ -2104,13 +3022,93 @@
       }
     },
     {
-      "id": "topic:krithika",
+      "id": "topic:finishes",
       "type": "topic_entity",
-      "name": "krithika",
-      "file_path": "chats/transcript_2b8bc1fe.jsonl",
-      "description": "Shared domain topic 'krithika' connecting multi-modal documents and workspace chats",
+      "name": "finishes",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Shared domain topic 'finishes' connecting multi-modal documents and workspace chats",
       "metadata": {
-        "keyword": "krithika"
+        "keyword": "finishes"
+      }
+    },
+    {
+      "id": "topic:graph",
+      "type": "topic_entity",
+      "name": "graph",
+      "file_path": "chats/transcript_b6556366.jsonl",
+      "description": "Shared domain topic 'graph' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "graph"
+      }
+    },
+    {
+      "id": "topic:knowledge",
+      "type": "topic_entity",
+      "name": "knowledge",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "Shared domain topic 'knowledge' connecting multi-modal documents and workspace chats",
+      "metadata": {
+        "keyword": "knowledge"
+      }
+    },
+    {
+      "id": "chat_turn:6e787d05:S35",
+      "type": "chat_turn",
+      "name": "Chat 6e787d05 Turn S35 (assistant)",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "[ASSISTANT S35] Pulling and syncing your **Monday, November 16, 2026** Fuel Surcharge report and Knowledge Graph \u2014 one moment while the Git sync finishes!",
+      "metadata": {
+        "conversation_id": "6e787d05-7427-4ef5-a4aa-d34b8c1b5192",
+        "step_index": 35,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:11:38Z",
+        "content_excerpt": "Pulling and syncing your **Monday, November 16, 2026** Fuel Surcharge report and Knowledge Graph \u2014 one moment while the Git sync finishes!",
+        "topics": [
+          "finishes",
+          "fuel",
+          "graph",
+          "knowledge"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e787d05:S36",
+      "type": "chat_turn",
+      "name": "Chat 6e787d05 Turn S36 (assistant)",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "[ASSISTANT S36] All 3 **Monday Fuel** sources are pulled and saved to [Fuel_Surcharge_Report.html](file:///home/krithika/workspace/Fuel/Fuel_Surcharge_Report.html) *(the server restarted briefly right as I was wrapping up \u2014 the Knowledg",
+      "metadata": {
+        "conversation_id": "6e787d05-7427-4ef5-a4aa-d34b8c1b5192",
+        "step_index": 36,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:11:36Z",
+        "content_excerpt": "All 3 **Monday Fuel** sources are pulled and saved to [Fuel_Surcharge_Report.html](file:///home/krithika/workspace/Fuel/Fuel_Surcharge_Report.html) *(the server restarted briefly right as I was wrapping up \u2014 the Knowledge Graph sync & Git push is finishing in the background right now)*.\n\n### Monday Fuel Surcharge Summary \u2014 **Monday, November 16, 2026**\n\n| Carrier / Source | Category | Effective Date | Avg. OHD Price | Rate / Price | Prior Week (Nov 9) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Oceanex** | **Full Load TL2 (10,000 \u2013 54,999 lbs)** | **November 16, 2026** | \u2014 | **`118.1%`** | `121.8%` *(-3.7%)* |\n| **CN 7404** | **Intra-Canada (Weekly Intermodal)** | **November 16, 2026** | **`$6.127`** | **`39.26%`** | `40.64%` / `$6.292` *(-1.38%)* |\n| **CN 7405** | **Intra-Canada (Mo",
+        "topics": [
+          "fuel",
+          "home",
+          "intermodal",
+          "krithika"
+        ]
+      }
+    },
+    {
+      "id": "chat_turn:6e787d05:S38",
+      "type": "chat_turn",
+      "name": "Chat 6e787d05 Turn S38 (assistant)",
+      "file_path": "chats/transcript_6e787d05.jsonl",
+      "description": "[ASSISTANT S38] Here is your **Monday Fuel Surcharge Summary** for **Monday, November 16, 2026** (also updated in [Fuel_Surcharge_Report.html](file:///home/krithika/workspace/Fuel/Fuel_Surcharge_Report.html) and [Bison_FSC_Latest.pdf](f",
+      "metadata": {
+        "conversation_id": "6e787d05-7427-4ef5-a4aa-d34b8c1b5192",
+        "step_index": 38,
+        "role": "assistant",
+        "created_at": "2026-11-16T02:11:58Z",
+        "content_excerpt": "Here is your **Monday Fuel Surcharge Summary** for **Monday, November 16, 2026** (also updated in [Fuel_Surcharge_Report.html](file:///home/krithika/workspace/Fuel/Fuel_Surcharge_Report.html) and [Bison_FSC_Latest.pdf](file:///home/krithika/workspace/Fuel/Bison_FSC_Latest.pdf)):\n\n| Carrier / Source | Category | Effective Date | Avg. OHD Price | Rate / Price | Prior Week (Nov 9) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Oceanex** | **Full Load TL2 (10,000 \u2013 54,999 lbs)** | **November 16, 2026** | \u2014 | **`118.1%`** | `121.8%` *(-3.7%)* |\n| **CN 7404** | **Intra-Canada (Weekly Intermodal)** | **November 16, 2026** | **`$6.127`** | **`39.26%`** | `40.64%` / `$6.292` *(-1.38%)* |\n| **CN 7405** | **Intra-Canada (Monthly Intermodal)** | **November 2026** | **`$6.291`** | **`40.64%`** | `40",
+        "topics": [
+          "fuel",
+          "home",
+          "krithika",
+          "november"
+        ]
       }
     },
     {
@@ -2131,26 +3129,6 @@
       "description": "Shared domain topic 'run-oceanexfuel' connecting multi-modal documents and workspace chats",
       "metadata": {
         "keyword": "run-oceanexfuel"
-      }
-    },
-    {
-      "id": "topic:workspace",
-      "type": "topic_entity",
-      "name": "workspace",
-      "file_path": "chats/transcript_2b8bc1fe.jsonl",
-      "description": "Shared domain topic 'workspace' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "workspace"
-      }
-    },
-    {
-      "id": "topic:home",
-      "type": "topic_entity",
-      "name": "home",
-      "file_path": "chats/transcript_b6556366.jsonl",
-      "description": "Shared domain topic 'home' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "home"
       }
     },
     {
@@ -2245,16 +3223,6 @@
           "krithika",
           "run-oceanexfuel"
         ]
-      }
-    },
-    {
-      "id": "topic:fuel",
-      "type": "topic_entity",
-      "name": "fuel",
-      "file_path": "chats/transcript_2b8bc1fe.jsonl",
-      "description": "Shared domain topic 'fuel' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "fuel"
       }
     },
     {
@@ -2516,26 +3484,6 @@
       "description": "Shared domain topic 'angular' connecting multi-modal documents and workspace chats",
       "metadata": {
         "keyword": "angular"
-      }
-    },
-    {
-      "id": "topic:antigravity",
-      "type": "topic_entity",
-      "name": "antigravity",
-      "file_path": "chats/transcript_b6556366.jsonl",
-      "description": "Shared domain topic 'antigravity' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "antigravity"
-      }
-    },
-    {
-      "id": "topic:ardent",
-      "type": "topic_entity",
-      "name": "ardent",
-      "file_path": "chats/transcript_b6556366.jsonl",
-      "description": "Shared domain topic 'ardent' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "ardent"
       }
     },
     {
@@ -2839,16 +3787,6 @@
       }
     },
     {
-      "id": "topic:rules",
-      "type": "topic_entity",
-      "name": "rules",
-      "file_path": "chats/transcript_b6556366.jsonl",
-      "description": "Shared domain topic 'rules' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "rules"
-      }
-    },
-    {
       "id": "topic:asq-bb-exam",
       "type": "topic_entity",
       "name": "asq-bb-exam",
@@ -2856,16 +3794,6 @@
       "description": "Shared domain topic 'asq-bb-exam' connecting multi-modal documents and workspace chats",
       "metadata": {
         "keyword": "asq-bb-exam"
-      }
-    },
-    {
-      "id": "topic:graph",
-      "type": "topic_entity",
-      "name": "graph",
-      "file_path": "chats/transcript_b6556366.jsonl",
-      "description": "Shared domain topic 'graph' connecting multi-modal documents and workspace chats",
-      "metadata": {
-        "keyword": "graph"
       }
     },
     {
@@ -3653,6 +4581,370 @@
       "metadata": {}
     },
     {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 7
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:intermodal",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 6
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:canada",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:intra-canada",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:november",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "topic:qwen",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "doc_file:Bison_FSC_Latest.pdf",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "py_module:get_kalibrate_canada_ave.py",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S1",
+      "target": "topic:antigravity",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S1",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S1",
+      "target": "topic:live",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S1",
+      "target": "topic:qwen",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S1",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S2",
+      "target": "topic:qwen",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 4
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S2",
+      "target": "topic:agents",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S2",
+      "target": "topic:antigravity",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S2",
+      "target": "topic:context",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S2",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S2",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S3",
+      "target": "topic:cathy",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S3",
+      "target": "topic:developer",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S3",
+      "target": "topic:last",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S3",
+      "target": "topic:preferred",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S3",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S4",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S5",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S5",
+      "target": "topic:latest",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S5",
+      "target": "topic:monday",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S5",
+      "target": "topic:november",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S5",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S6",
+      "target": "topic:intermodal",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 4
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S6",
+      "target": "topic:november",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 4
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S6",
+      "target": "topic:intra-canada",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 3
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S6",
+      "target": "topic:canada",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 2
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S6",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S7",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "topic:workspace",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 4
+      }
+    },
+    {
+      "source": "chat_session:SHAREDSE",
+      "target": "chat_turn:SHAREDSE:S8",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "doc_file:Bison_FSC_Latest.pdf",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:SHAREDSE:S8",
+      "target": "py_module:get_kalibrate_canada_ave.py",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
       "source": "chat_session:transcri",
       "target": "topic:sunnyvale",
       "relation": "MENTIONS_TOPIC",
@@ -4157,68 +5449,726 @@
       "metadata": {}
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:model",
+      "source": "chat_session:6e8422d1",
+      "target": "topic:workspace",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 49
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 48
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 48
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:power-automate",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 39
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:accrual",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 34
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:jsonl",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 28
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:chats",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 25
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "topic:phase",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 18
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "doc:FUEL_AUTOMATION_GUIDE.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S48",
+      "target": "topic:accrual_automation_guide",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S48",
+      "target": "topic:automate",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S48",
+      "target": "topic:becky_erin_excel_office_scripts",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S48",
+      "target": "topic:chats",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S48",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S50",
+      "target": "topic:workspace",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 15
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S50",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 14
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S50",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 14
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S50",
+      "target": "topic:power-automate",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 13
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S50",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S50",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S51",
+      "target": "topic:jsonl",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 3
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S51",
+      "target": "topic:accrual",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 2
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:user_settings_change",
+      "source": "chat_turn:6e8422d1:S51",
+      "target": "topic:phase",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 2
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:carbon",
+      "source": "chat_turn:6e8422d1:S51",
+      "target": "topic:accrual_automation_guide",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 1
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:change",
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S51",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S51",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S56",
+      "target": "topic:accrual",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 11
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S56",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 8
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S56",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 8
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S56",
+      "target": "topic:power-automate",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 8
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S56",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S56",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S57",
+      "target": "topic:ardent",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 1
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:changed",
+      "source": "chat_turn:6e8422d1:S57",
+      "target": "topic:bookmark",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 1
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:comment",
+      "source": "chat_turn:6e8422d1:S57",
+      "target": "topic:chats",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 1
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:doesn",
+      "source": "chat_turn:6e8422d1:S57",
+      "target": "topic:continue",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 1
       }
     },
     {
-      "source": "chat_session:6e787d05",
-      "target": "topic:exact",
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S57",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S57",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S68",
+      "target": "topic:vault-study-session",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 8
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S68",
+      "target": "topic:mat-sidenav-content",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 7
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S68",
+      "target": "topic:activemenu",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 6
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S68",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 6
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S68",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S68",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S69",
+      "target": "topic:update",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 2
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S69",
+      "target": "topic:commit",
       "relation": "MENTIONS_TOPIC",
       "metadata": {
         "count": 1
       }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S69",
+      "target": "topic:everything",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S69",
+      "target": "topic:please",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S69",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S90",
+      "target": "topic:committed",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S90",
+      "target": "topic:confirm",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S90",
+      "target": "topic:finishing",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S90",
+      "target": "topic:moment",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S90",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S92",
+      "target": "topic:rules",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 13
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S92",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S92",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S92",
+      "target": "topic:qwen",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S92",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S92",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S93",
+      "target": "topic:jsonl",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 3
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S93",
+      "target": "topic:accrual",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 2
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S93",
+      "target": "topic:phase",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 2
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S93",
+      "target": "topic:accrual_automation_guide",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S93",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S93",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S96",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S96",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S96",
+      "target": "topic:power-automate",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S96",
+      "target": "topic:workspace",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S96",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S96",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S96",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "topic:canada",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 2
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "topic:tuesday",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 2
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "topic:automation",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "topic:bison",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:6e8422d1",
+      "target": "chat_turn:6e8422d1:S97",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "doc:FUEL_AUTOMATION_GUIDE.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e8422d1:S97",
+      "target": "file:transcript.jsonl",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 17
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:november",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 11
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:workspace",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 10
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:intermodal",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 9
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:monday",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 7
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "topic:fuel_surcharge_report",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 6
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "doc_file:Bison_FSC_Latest.pdf",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "doc:FUEL_AUTOMATION_GUIDE.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "py_module:get_kalibrate_canada_ave.py",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
     },
     {
       "source": "chat_turn:6e787d05:S0",
@@ -4270,6 +6220,174 @@
       "source": "chat_session:6e787d05",
       "target": "chat_turn:6e787d05:S29",
       "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S35",
+      "target": "topic:finishes",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S35",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S35",
+      "target": "topic:graph",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S35",
+      "target": "topic:knowledge",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 1
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "chat_turn:6e787d05:S35",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 8
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "topic:intermodal",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "chat_turn:6e787d05:S36",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "doc_file:Bison_FSC_Latest.pdf",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S36",
+      "target": "py_module:get_kalibrate_canada_ave.py",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "topic:fuel",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 7
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "topic:home",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "topic:krithika",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "topic:november",
+      "relation": "MENTIONS_TOPIC",
+      "metadata": {
+        "count": 5
+      }
+    },
+    {
+      "source": "chat_session:6e787d05",
+      "target": "chat_turn:6e787d05:S38",
+      "relation": "HAS_CHAT_TURN",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "doc_file:Bison_FSC_Latest.pdf",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "doc:FUEL_AUTOMATION_GUIDE.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "html:Fuel_Surcharge_Report.html",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "file:Get-KalibrateCanadaAveV.ps1",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
+      "source": "chat_turn:6e787d05:S38",
+      "target": "py_module:get_kalibrate_canada_ave.py",
+      "relation": "DISCUSSED_FILE",
       "metadata": {}
     },
     {
@@ -4497,6 +6615,12 @@
       "metadata": {
         "count": 7
       }
+    },
+    {
+      "source": "chat_session:b6556366",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
     },
     {
       "source": "chat_turn:b6556366:S826",
@@ -4947,6 +7071,12 @@
       "metadata": {}
     },
     {
+      "source": "chat_turn:b6556366:S863",
+      "target": "doc:QWEN.md",
+      "relation": "DISCUSSED_FILE",
+      "metadata": {}
+    },
+    {
       "source": "script:server/utils/install-watch-agent-cli.sh",
       "target": "script:server/utils/watch-subagents.sh",
       "relation": "CALLS_SCRIPT",
@@ -4960,11 +7090,13 @@
     "Fuel_Surcharge_Report.html": "4008e4a7d2f61441d2f07c8f057450e0f17b1d7990b9adfb78b02f7e33a4416d",
     "Get-KalibrateCanadaAveV.ps1": "d0374998376ae59f07dbaf4a65853cf9503c9da21cc66cec3503252577dd0eaf",
     "Kalibrate_Diesel_Weekly_2026.xlsx": "9b72011baf6331830b1dac99e967a0837f8b9f6a1db2958d053f779c230bee1a",
+    "QWEN.md": "68548b65bdde54892bdbf5886acdc3fcaf93da005cfffb6bdf27f687e9e03120",
     "get_kalibrate_canada_ave.py": "f0fd42de899dfbf84a3fbbf2fc806e697e9e2e2a1b761280029efb8e31fae317",
     "transcript.jsonl": "9c1dfad9cfd11096503394deb2d2582bafbe3a1594d82e049778fed9c2c39f99",
+    "chats/SHARED_SESSION_STATE.md": "b8d40a7b42be5403c24074073f15ba3f2f2a0bf3b761e42adeddaaf38d51eb89",
     "chats/transcript.jsonl": "67569ef91abac5a97920af4672cd5878cabeff2c1e78c0da27deb8acec0bcfe1",
     "server/utils/install-watch-agent-cli.sh": "aba3d385a40bf2db30e939a0947025f8075cb01589cc923c1e32a38f5dbd35c3",
     "server/utils/watch-subagents.sh": "92190317c55b2730fe941acb7f25f4f0434a1732c39f75ebd015d000245dc544",
-    "repo.md": "016676085f49f8587cf25aeaad106d1dc241c4fa7d743d9769a5825b05bbe8cc"
+    "repo.md": "19c59722d103f356203eba16584b8cac0077685c2c9eddfbb0052d013f58da8e"
   }
 }

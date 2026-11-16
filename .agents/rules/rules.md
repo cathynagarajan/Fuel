@@ -1,53 +1,27 @@
 # Project Rules & AI Agent Operational Guidelines (`Fuel`)
 
+## 0. Mandatory Shared Fuel Protocol for Qwen & Antigravity
+1. **Always Address the User as `Cathy`**.
+2. **Read `QWEN.md`, `chats/SHARED_SESSION_STATE.md`, & `FUEL_AUTOMATION_GUIDE.md` First**:
+   - Whenever `use qwen` or `stop qwen` is triggered, read `/home/krithika/workspace/Fuel/QWEN.md` and `/home/krithika/workspace/Fuel/chats/SHARED_SESSION_STATE.md` immediately so you pull the exact 4 Canadian/TL2 fuel surcharge fields (`Oceanex Full Load TL2`, `CN 7404 & 7405 Intra-Canada`, `Bison Intermodal Within Canada`, and `Kalibrate Row 81 Canada Ave(V)`).
+3. **Plain English Only — ZERO LaTeX (`$...$`) in Zed Chat**:
+   - Never use LaTeX math (`\rightarrow`, `\le`) in chat responses; use plain keyboard arrows (`->`) and backtick `$` amounts so Zed never interprets two `$` signs as math.
+
+---
+
 ## 1. Repository Scope & Single-Repo Isolation
 - **Project Root**: `/home/krithika/workspace/Fuel`
-- **Primary Developer**: `Krithika`
+- **Primary Developer**: `Cathy` (`Krithika`)
 - **Git Remote (`origin`)**: `https://github.com/cathynagarajan/Fuel.git` (Branch: `main`)
 - **PostgreSQL `pgvector` Table**: `kg_vectors_fuel` (`192.168.1.155:30432` / database `vectordb`)
-- **Single-Repo Mode (`single_repo_mode: true`)**: This repository is an independent project workspace. It does **NOT** synchronize with the 5-node Kubernetes cluster infrastructure git loop (`tower`, `spark1`, `spark2`, `agx`, `nano`). All `git commit` and `git push` operations apply exclusively to this project's own Git remote.
+- **Single-Repo Mode (`single_repo_mode: true`)**: This repository is an independent project workspace.
 
 ---
 
 ## 2. Mandatory Pre-Task & Post-Task Knowledge Graph (`query_kg.py`) Workflow
-1. **Query Knowledge Graph First**:
-   - Before scanning the filesystem with `grep` or `find`, query the local Knowledge Graph or the `cluster-graphrag` MCP tool (`kg_rag_query` with `repo="fuel"`):
+1. **Single-Repo Commit & Push (Antigravity <-> Qwen Dual Sync)**:
+   - On every commit, update `/home/krithika/workspace/Fuel/chats/SHARED_SESSION_STATE.md` and `Fuel_Surcharge_Report.html` first, then run:
      ```bash
-     python3 /home/krithika/workspace/Fuel/knowledge_graph/query_kg.py --search "<symbol_or_topic>"
+     python3 /home/krithika/workspace/Fuel/knowledge_graph/query_kg.py --commit-push -m "Describe your change"
      ```
-2. **Pre-Commit Knowledge Graph & Documentation Sync**:
-   - Before committing code changes, run:
-     ```bash
-     python3 /home/krithika/workspace/Fuel/knowledge_graph/query_kg.py --pre-commit-hook
-     ```
-   - This automatically rebuilds `knowledge_graph.json`, `knowledge_graph.db`, `KNOWLEDGE_GRAPH.md`, `knowledge_graph.html`, and `repo.md`, and incrementally syncs changed embeddings to `kg_vectors_fuel` via the 5-node GPU pool.
-3. **Single-Repo Commit & Push**:
-   - To commit and push changes to this project's Git remote (`origin main`):
-     ```bash
-     python3 /home/krithika/workspace/Fuel/knowledge_graph/query_kg.py --commit-push "Describe your change"
-     ```
-
----
-
-## 3. Multi-Subagent Parallel Coordination (`zedCheck` / `watch-agent-activity.sh`)
-- **Parallel Subagent Execution**: When a task spans multiple independent files or subsystems (e.g., backend API + frontend UI + unit tests), decompose the work and invoke parallel subagents (`invoke_subagent`) with strict file-ownership boundaries so they never edit the same file simultaneously.
-- **Live Subagent & Tool Telemetry (`zedCheck`)**:
-  - Run the **`zedCheck`** task in Zed (`Ctrl+Shift+P` -> `task: spawn` -> `zedCheck`) or execute:
-    ```bash
-    bash /home/krithika/workspace/Fuel/server/utils/watch-agent-activity.sh
-    ```
-  - This displays a real-time split-screen dashboard of the main Antigravity (`agy`) agent, all active parallel subagents, and live MCP/GPU calls.
-
----
-
-## 4. Shared 5-Node Cluster GPU Pool (`use-gpu`) & MCP Services
-- **5-Node GPU Pool CLI (`/usr/local/bin/use-gpu`)**:
-  - Check live GPU status: `use-gpu status`
-  - Dispatch workloads to specific cluster GPUs: `use-gpu spark1 <cmd>`, `use-gpu spark2 <cmd>`, `use-gpu agx <cmd>`, `use-gpu mac <cmd>`, `use-gpu nano <cmd>`
-- **Cluster GraphRAG MCP Server (`cluster-graphrag`)**:
-  - Lazy-loaded tools in `~/.gemini/antigravity-cli/mcp/cluster-graphrag/`:
-    - `kg_rag_query` (pass `repo: "fuel"`)
-    - `kg_rag_upsert` (pass `repo: "fuel"`)
-    - `kg_gpu_pool_status` (pass `repo: "fuel"`)
-    - `kg_webhook_sync` (pass `repo: "fuel"`)
-    - `kg_pii_guardrail_scan`
+   - NEVER pass `--no-verify` to `git commit`.

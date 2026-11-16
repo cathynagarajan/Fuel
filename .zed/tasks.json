@@ -3,8 +3,8 @@
     "label": "watch-agent (Unified Agent & Subagent Monitor)",
     "command": "bash",
     "args": [
-      "-c",
-      "for p in \"$HOME/.local/bin/watch-agent\" \"/home/krithika/workspace/Fuel/server/utils/watch-agent-activity.sh\" \"/home/krithika/workspace/Fuel/.zed/watch-agent-activity.sh\" \"$HOME/container/kubernetes/server/utils/watch-agent-activity.sh\"; do [ -f \"$p\" ] && exec bash \"$p\"; done"
+      "-lc",
+      "exec \"$HOME/.local/bin/watch-agent\""
     ],
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
@@ -14,8 +14,8 @@
     "label": "watch-subagents (Delegated Subagents Only)",
     "command": "bash",
     "args": [
-      "-c",
-      "for p in \"$HOME/.local/bin/watch-subagents\" \"/home/krithika/workspace/Fuel/server/utils/watch-subagents.sh\"; do [ -f \"$p\" ] && exec bash \"$p\"; done; exec bash \"/home/krithika/workspace/Fuel/server/utils/watch-agent-activity.sh\" --subagents-only"
+      "-lc",
+      "exec \"$HOME/.local/bin/watch-subagents\""
     ],
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
@@ -38,6 +38,17 @@
     "args": [
       "/home/krithika/workspace/Fuel/knowledge_graph/query_kg.py",
       "--pre-commit-hook"
+    ],
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "zedCheck",
+    "command": "bash",
+    "args": [
+      "-lc",
+      "exec \"$HOME/.local/bin/watch-agent\""
     ],
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
